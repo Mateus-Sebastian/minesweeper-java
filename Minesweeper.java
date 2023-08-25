@@ -21,7 +21,7 @@ public class Minesweeper {
     int boardWidth = numCols * tileSize;
     int boardHeight = numRows * tileSize;
     
-    JFrame frame = new JFrame("Minesweeper");
+    JFrame frame = new JFrame("Campo Minado");
     JLabel textLabel = new JLabel();
     JPanel textPanel = new JPanel();
     JPanel boardPanel = new JPanel();
@@ -44,7 +44,7 @@ public class Minesweeper {
 
         textLabel.setFont(new Font("Arial", Font.BOLD, 25));
         textLabel.setHorizontalAlignment(JLabel.CENTER);
-        textLabel.setText("Minesweeper: " + Integer.toString(mineCount));
+        textLabel.setText("Minas: " + Integer.toString(mineCount));
         textLabel.setOpaque(true);
 
         textPanel.setLayout(new BorderLayout());
