@@ -63,7 +63,7 @@ public class Minesweeper {
                 tile.setFocusable(false);
                 tile.setMargin(new Insets(0, 0, 0, 0));
                 tile.setFont(new Font("Arial Unicode MS", Font.PLAIN, 45));
-                // tile.setText("💣");
+                // tile.setText("💀");
                 tile.addMouseListener(new MouseAdapter() {
                     @Override
                     public void mousePressed(MouseEvent e) {
@@ -129,11 +129,11 @@ public class Minesweeper {
     void revealMines() {
         for (int i = 0; i < mineList.size(); i++) {
             MineTile tile = mineList.get(i);
-            tile.setText("💣");
+            tile.setText("💀");
         }
 
         gameOver = true;
-        textLabel.setText("Game Over!");
+        textLabel.setText("FIM DE JOGO!");
     }
 
     void checkMine(int r, int c) {
